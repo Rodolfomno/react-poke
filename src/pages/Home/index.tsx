@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { getPokemons, getPokemonDetails } from "../../services/api";
 import type { Pokemon } from "../../types/pokeTypes";
-
 import PokemonCard from "../../components/Card";
 import Pagination from "../../components/Pagination";
 import SearchInput from "../../components/SearchInput";

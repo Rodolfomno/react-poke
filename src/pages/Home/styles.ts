@@ -26,7 +26,7 @@ export const Filters = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    align-items: center;   /* 👈 centraliza */
+    align-items: center; 
   }
 `;
 
@@ -50,7 +50,7 @@ export const Select = styled.select`
 
   @media (max-width: 768px) {
     width: 100%;
-    max-width: 360px; /* 👈 mantém bonito */
+    max-width: 360px;
   }
 `;
 
