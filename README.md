@@ -87,11 +87,13 @@ O **styled-components** foi escolhido para manter estilos próximos dos componen
 ## ▶️ Como executar o projeto
  
 # instalar dependências
+```
 npm install
-
+```
 # iniciar o projeto
+```
 npm run dev
-
+```
 
 A aplicação estará disponível em:
 👉 http://localhost:5173
