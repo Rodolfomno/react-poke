@@ -1,73 +1,72 @@
-# React + TypeScript + Vite
+# 📱 Pokédex - React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma **Pokédex interativa** desenvolvida como desafio técnico de Front-End.  
+A aplicação consome a **PokéAPI** para listar Pokémon, permitir busca por nome, navegação entre páginas e visualização organizada em cards.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias Utilizadas
 
-## React Compiler
+- **React** – Biblioteca para construção da interface
+- **TypeScript** – Tipagem estática para maior segurança e organização
+- **Vite** – Ferramenta de build rápida e moderna
+- **Styled-components** – Estilização com CSS-in-JS
+- **React Router DOM** – Navegação entre páginas
+- **PokéAPI** – API pública de dados dos Pokémon
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📂 Estrutura do Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+src/
+├─ components/
+│ ├─ Header/
+│ ├─ SearchInput/
+│ └─ Card/
+│ └─ Pagination/
+├─ pages/
+│ ├─ Home.tsx
+│ └─ Pokedex.tsx
+├─ services/
+│ └─ api.ts
+├─ types/
+│ └─ pokeTypes.ts
+├─ styles/
+│ └─ GlobalStyle.ts
+├─ Routes/
+├─ layouts/
+└─ App.tsx
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ✨ Funcionalidades
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- 📋 **Listagem de Pokémon**
+- 🔍 **Busca por nome**
+- 📄 **Paginação**
+- 🎯 **Identificação de rota ativa no Header**
+- 📱 **Layout responsivo**
+- ⚡ **Atualizações sem recarregar a página**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🎨 Layout
+
+O layout foi desenvolvido com base em um **design do Figma**, respeitando:
+- Tipografia
+- Espaçamentos
+- Cores
+- Componentes visuais
+
+---
+
+## 🧠 Decisões Técnicas
+
+Embora o desafio permita **Vanilla JS**, foi utilizado **React + TypeScript** para:
+- Melhor organização do código
+- Reutilização de componentes
+- Tipagem forte
+- Facilidade de manutenção e escalabilidade
+
+O **styled-components** foi escolhido para manter estilos próximos dos componentes, facilitando leitura e manutenção.

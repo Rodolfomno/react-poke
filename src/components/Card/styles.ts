@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-  border: solid 1px black;
-  background: green;
+  background-color: #F0F3FF;
   height: 285px;
   width: 203px;
   border-radius: 12px;
@@ -13,7 +12,7 @@ export const Card = styled.div`
 
 export const Name = styled.h3`
   text-transform: capitalize;
-  color:#333;
+  color: #212E4C;
 `;
 
 export const Types = styled.div`
@@ -23,7 +22,7 @@ export const Types = styled.div`
 `;
 
 export const TypeBadge = styled.span`
-  color: white;
+  color: #11B047;
   padding: 4px 8px;
   border-radius: 8px;
   font-size: 12px;

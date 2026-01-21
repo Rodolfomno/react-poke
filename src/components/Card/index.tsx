@@ -8,13 +8,11 @@ interface Props {
 export default function PokemonCard({ pokemon }: Props) {
   return (
     <Card>
-      <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-      <Name>{pokemon.name}</Name>
       <Types>
-        {pokemon.types.map(t => (
-          <TypeBadge key={t.type.name}>{t.type.name}</TypeBadge>
-        ))}
+          <TypeBadge key={pokemon.types[0].type.name}>{pokemon.types[0].type.name}</TypeBadge>
       </Types>
+      <img src={pokemon.sprites.front_default} alt={pokemon.name} height={143} width={143}/>
+      <Name>{pokemon.name}</Name>
     </Card>
   );
 }
