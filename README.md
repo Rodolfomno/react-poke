@@ -1,7 +1,7 @@
 # 📱 Pokédex - React + TypeScript
 
 Este projeto é uma **Pokédex interativa** desenvolvida como desafio técnico de Front-End.  
-A aplicação consome a **PokéAPI** para listar Pokémon, permitir busca por nome, navegação entre páginas e visualização organizada em cards.
+A aplicação consome a **PokéAPI** para listar Pokémon, permitir busca por nome e tipo, navegação entre páginas e visualização organizada em cards.
 
 ---
 
