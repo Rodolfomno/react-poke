@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
-import Home from "../pages/Home";
+import Home from "../pages/Home/index";
 import Pokedex from "../pages/Pokedex";
 
 export const router = createBrowserRouter([

@@ -1,5 +1,5 @@
 import { Button, Buttons, StyleHeader } from "./styles";
-import pokedexImg from "../assets/pokedex.png";
+import pokedexImg from "../../assets/pokedex.png";
 
 export default function Header() {
   return (
