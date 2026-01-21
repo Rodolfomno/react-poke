@@ -12,10 +12,11 @@ export default function SearchInput({
   return (
     <Wrapper>
       <Input
-        type="text"
+        id="search"
+        name="search"
         placeholder="Faça uma busca pelo nome do pokémon"
         value={value}
-        onChange={(e) => onChange(e.target.value)}
+        onChange={e => onChange(e.target.value)}
       />
 
       <IconWrapper>

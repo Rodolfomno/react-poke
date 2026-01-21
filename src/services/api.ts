@@ -22,3 +22,17 @@ export async function getPokemonByName(name: string): Promise<Pokemon> {
   if (!response.ok) throw new Error("Pokémon não encontrado");
   return response.json();
 }
+
+export async function getPokemonsByType(type: string) {
+  const response = await fetch(
+    `https://pokeapi.co/api/v2/type/${type}`
+  );
+  const data = await response.json();
+
+  return Promise.all(
+    data.pokemon.map((p: any) =>
+      fetch(p.pokemon.url).then(res => res.json())
+    )
+  );
+}
+
