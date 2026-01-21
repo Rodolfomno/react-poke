@@ -11,9 +11,10 @@ export const HomeStyle = styled.div`
 
 export const ListItems = styled.div`
   width: 100%;
+  max-width: 1280px;
   margin-top: 32px;
-
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(203px, 1fr));
+  gap: 12px;
+  justify-items: center;
 `;

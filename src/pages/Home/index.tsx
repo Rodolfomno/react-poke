@@ -6,13 +6,13 @@ import { HomeStyle, ListItems } from "./styles";
 import PokemonCard from "../../components/Card";
 import SearchInput from "../../components/SearchInput";
 
-const LIMIT = 20;
+const LIMIT = 18;
 
 export default function Home() {
   const [search, setSearch] = useState("");
   const [pokemons, setPokemons] = useState<Pokemon[]>([]);
   const [page, setPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(0);
+  // const [totalPages, setTotalPages] = useState(0);
 
   useEffect(() => {
     async function loadPokemons() {
@@ -25,7 +25,7 @@ export default function Home() {
       );
 
       setPokemons(details);
-      setTotalPages(Math.ceil(data.count / LIMIT));
+      // setTotalPages(Math.ceil(data.count / LIMIT));
     }
 
     loadPokemons();

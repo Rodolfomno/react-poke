@@ -17,6 +17,8 @@ export const PageButton = styled.button<{ active?: boolean }>`
   align-items: center;
   justify-content: center;
 
+  font-size: 14px;
+
   background-color: ${({ active }) =>
     active ? "#1f1f1f" : "transparent"};
 
@@ -26,7 +28,14 @@ export const PageButton = styled.button<{ active?: boolean }>`
     background-color: ${({ active }) =>
       active ? "#1f1f1f" : "#ededed"};
   }
+
+  @media (max-width: 480px) {
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
+  }
 `;
+
 
 
 export const PaginationWrapper = styled.div`
@@ -46,7 +55,12 @@ export const NavButton = styled.button<{ disabled?: boolean }>`
   align-items: center;
   gap: 6px;
 
-  color: ${({ disabled }) => (disabled ? "#b0b0b0" : "#000")};
+  font-size: 14px;
 
+  color: ${({ disabled }) => (disabled ? "#b0b0b0" : "#000")};
   pointer-events: ${({ disabled }) => (disabled ? "none" : "auto")};
+
+  @media (max-width: 480px) {
+    font-size: 13px;
+  }
 `;
