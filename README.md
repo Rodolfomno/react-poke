@@ -82,8 +82,6 @@ Embora o desafio permita **Vanilla JS**, foi utilizado **React + TypeScript** pa
 
 O **styled-components** foi escolhido para manter estilos próximos dos componentes, facilitando leitura e manutenção.
 
-
-
 ## ▶️ Como executar o projeto
  
 # instalar dependências
