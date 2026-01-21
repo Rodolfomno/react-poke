@@ -18,25 +18,35 @@ A aplicação consome a **PokéAPI** para listar Pokémon, permitir busca por no
 
 ## 📂 Estrutura do Projeto
 
+```text
 src/
 ├─ components/
-│ ├─ Header/
-│ ├─ SearchInput/
-│ └─ Card/
-│ └─ Pagination/
+│  ├─ Header/
+│  ├─ SearchInput/
+│  ├─ Card/
+│  └─ Pagination/
+│
 ├─ pages/
-│ ├─ Home.tsx
-│ └─ Pokedex.tsx
-├─ services/
-│ └─ api.ts
-├─ types/
-│ └─ pokeTypes.ts
-├─ styles/
-│ └─ GlobalStyle.ts
-├─ Routes/
+│  ├─ Home/
+│  └─ Pokedex/
+│
 ├─ layouts/
-└─ App.tsx
-
+│  └─ MainLayout.tsx
+│
+├─ routes/
+│  └─ index.tsx
+│
+├─ services/
+│  └─ api.ts
+│
+├─ types/
+│  └─ pokeTypes.ts
+│
+├─ styles/
+│  └─ GlobalStyle.ts
+│
+├─ App.tsx
+```
 
 ---
 
@@ -44,6 +54,7 @@ src/
 
 - 📋 **Listagem de Pokémon**
 - 🔍 **Busca por nome**
+- 🔍 **Filtro por tipo**
 - 📄 **Paginação**
 - 🎯 **Identificação de rota ativa no Header**
 - 📱 **Layout responsivo**
@@ -70,3 +81,17 @@ Embora o desafio permita **Vanilla JS**, foi utilizado **React + TypeScript** pa
 - Facilidade de manutenção e escalabilidade
 
 O **styled-components** foi escolhido para manter estilos próximos dos componentes, facilitando leitura e manutenção.
+
+
+
+## ▶️ Como executar o projeto
+ 
+# instalar dependências
+npm install
+
+# iniciar o projeto
+npm run dev
+
+
+A aplicação estará disponível em:
+👉 http://localhost:5173
