@@ -83,6 +83,16 @@ Embora o desafio permita **Vanilla JS**, foi utilizado **React + TypeScript** pa
 O **styled-components** foi escolhido para manter estilos próximos dos componentes, facilitando leitura e manutenção.
 
 ## ▶️ Como executar o projeto
+
+# Clonar repositorio
+```
+git clone https://github.com/Rodolfomno/react-poke
+```
+
+# Entrar na pasta
+```
+cd react-poke
+```
  
 # instalar dependências
 ```
